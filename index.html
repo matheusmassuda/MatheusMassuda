@@ -10,9 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <title>Matheus Massuda</title>
-</head>
-<body>
-    <style>
+  <style>
         nav {
         font-family: "Kanit", sans-serif;
         font-weight: 300;
@@ -26,8 +24,6 @@
             margin-bottom: 5%;
         }
 
-        
-
         body  {
         font-family: "Karla", sans-serif;
         font-optical-sizing: auto;
@@ -38,24 +34,60 @@
             max-height: 40px;
         }
 
+        /*
+        
         .w3-container {
             max-width:68%;
              margin:0 auto;
         }
-
         .text-color {
             color:rgb(29, 29, 29);
         }
 
+        
+        */
+        
         .margin-banner-btn {
             margin: 6.2% 5.9%;
         }
+        
+        .links {
+            text-decoration: none;
+        }
+        
+        @media only screen and (max-width: 600px) {
+
+            
+
+            #main, .main {
+                margin-left: 0;
+                padding: 10px;
+            }
+
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
+            }
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 1920px) {
+
+            
+
+            .w3-container {
+                max-width: 68%;
+                margin: auto;
+            }
+
+            
+        }
+
 
     </style>
-
-  
+</head>
+<body>
+    <!--MENU DESKTOP-->
     <div class="margin-nav-bar">
-        <nav class="w3-bar w3-text-balck w3-small" aria-label="Navegação Principal">
+        <nav class="w3-bar w3-text-balck w3-small w3-center w3-hide-small main" aria-label="Navegação Principal">
             <div class="w3-padding">
                 <a href="#topo" class="w3-bar-item">
                     <img src="Images/Logo/Logo_Katana_MatheusMassuda.png" alt="Logo de Katana por Matheus Massuda" class="logo"/>
@@ -68,26 +100,64 @@
             </div>
         </nav>
     </div>
+
+    <!--MENU MOBILE-->
+    <div class="w3-top w3-hide-large w3-hide-medium main">
+        <nav class="w3-bar s3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#projetos" class="w3-bar-item w3-button" style="width: 24%;">PROJETOS</a>
+            <a href="#historia" class="w3-bar-item w3-button" style="width: 24%;">HISTÓRIAS</a>
+            <a href="#tecnologias" class="w3-bar-item w3-button" style="width: 30%;">TECNOLOGIAS</a>
+            <a href="#contato" class="w3-bar-item w3-button" style="width:22%;">CONTATO</a>
+        </nav>
+    </div>
   
 
-  <main>
-    <section class="w3-container">
-        
-        <div class="w3-display-container">
-            <img src="Images/Banners/Banner_Matheus_Massuda_1920x740.jpg" alt="Banner de Matheus Luiz Massuda" class="w3-image">
-            <a href="#HISTÓRIA" class="w3-button w3-black w3-hover-blue-gray w3-display-bottomleft margin-banner-btn w3-padding-16 w3-small">MINHA HISTÓRIA</a>
-        </div>
-        
-        
+    <!--MAIN -- PROJETOS-->
+    <main>
+        <section class="w3-container">
+            
+            <div class="w3-display-container">
+                <img src="Images/Banners/Banner_Matheus_Massuda_1920x740.jpg" alt="Banner de Matheus Luiz Massuda" class="w3-image">
+                <a href="#HISTÓRIA" class="w3-button w3-black w3-hover-blue-gray w3-display-bottomleft margin-banner-btn w3-padding-16 w3-small">MINHA HISTÓRIA</a>
+            </div>
+            
+            
 
 
-        
-        <h1>Projetos</h1>
-        <p>Desenvolvedor, Designer Gráfico e Criador de Conteúdo. Bem-vindo ao meu portfólio.</p>
-        <h2>Criações</h2>
-        <h2>Criações</h2>
-    </section>
-    <!-- Seções adicionais como 'Projetos', 'Serviços' e 'Contato' podem ser adicionadas aqui -->
-  </main>
+            
+            <h1 class="w3-center w3-padding-32">PROJETOS</h1>
+
+            <div>
+                <div>
+                    <div>
+                        <img class="" src="Images/Documentario_Tumb.jpg" alt="Capa do Documentário" style="width: 100%; max-height: 400px; object-fit: cover;">
+                    </div>
+
+                    <div>
+                        <h2 class="w3-medium">
+                            <a href="https://www.youtube.com/watch?v=NtKGOfoJdo8&ab_channel=Skilu" target="_blank" class="links">World of Warcraft: o Fenômeno que Revolucionou uma Geração</a>
+                        </h2>
+                        <p>
+                           Atuei como diretor, roteirista, ator e editor em meu documentário autoral <span>World of Warcraft: o Fenômeno que Revolucionou uma Geração</span>. Este projeto foi um experiência completa de produção e gestão audiovisual.  
+                        </p>
+                        <p>
+                            "Acreditar que somos capazes de realizar algo que "nem mesmo poderíamos imaginar que somos", foi o pensamento que mais me moveu ao longo de todo esse processo. Que essa crença permaneça acesa para sempre em minha mente e coração."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <p>Desenvolvedor, Designer Gráfico e Criador de Conteúdo. Bem-vindo ao meu portfólio.</p>
+            <h2>Criações</h2>
+            <h2>Criações</h2>
+        </section>
+        <!-- Seções adicionais como 'Projetos', 'Serviços' e 'Contato' podem ser adicionadas aqui -->
+    </main>
+
+
 </body>
 </html>
