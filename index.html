@@ -54,33 +54,127 @@
         .links {
             text-decoration: none;
         }
-        
-        @media only screen and (max-width: 600px) {
 
-            
-
+        /*--------------------------------------------------------*/
+        @media (max-width: 480px) {
             #main, .main {
-                margin-left: 0;
+                margin: 0%;
                 padding: 10px;
             }
 
             .w3-bar {
                 background-color: rgb(255, 255, 255);
             }
+
+            .w3-display-container {
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .img-zoom-responsive {
+            transform: scale(1.8); /* Zoom (pode ajustar) */
+            transform-origin: right center; /* Mantém alinhado à direita */
+            transition: transform 0.3s ease-in-out;
         }
 
-        @media only screen and (min-width: 600px) and (max-width: 1920px) {
+        }
+        
+        /*--------------------------------------------------------*/
+        
+        @media only screen and (min-width: 481px) and (max-width: 768px) {
+            #main, .main {
+                margin: 0%;
+                padding: 10px;
+            }
+                
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
+            }
+                
+            .w3-display-container {
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
+            }
+                    
+            .img-zoom-responsive {
+                transform: scale(1.38); /* Zoom (pode ajustar) */
+                transform-origin: right center; /* Mantém alinhado à direita */
+                transition: transform 0.3s ease-in-out;
+            }
+                        
+        }
 
-            
-
-            .w3-container {
-                max-width: 68%;
-                margin: auto;
+        /*--------------------------------------------------------*/
+        
+        @media only screen and (min-width: 769px) and (max-width: 1120px) {
+            #main, .main {
+                margin: 1%;
+                padding: 10px;
+            }
+                
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
             }
 
             
+                
+            .w3-display-container {
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
+            }
+                    
+            .img-zoom-responsive {
+                transform: scale(1.42); /* Zoom (pode ajustar) */
+                transform-origin: right center; /* Mantém alinhado à direita */
+                transition: transform 0.3s ease-in-out;
+            }
+                        
         }
 
+        /*--------------------------------------------------------*/
+        
+        @media only screen and (min-width: 1121px) {
+            #main, .main {
+                margin: 0%;
+                padding: 10px;
+            }
+                
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
+            }
+
+            
+            .w3-container {
+                width: 62%;
+                margin: auto;
+            }
+                
+            .w3-display-container {
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
+            }
+                    
+            .img-zoom-responsive {
+                transform: scale(1); /* Zoom (pode ajustar) */
+                transform-origin: right center; /* Mantém alinhado à direita */
+                transition: transform 0.3s ease-in-out;
+            }
+                        
+        }
+
+
+
+        
+                            
+                            
+                      
+  
+
+        
 
     </style>
 </head>
@@ -114,10 +208,10 @@
 
     <!--MAIN -- PROJETOS-->
     <main>
-        <section class="w3-container">
+        <section class="w3-container main ">
             
             <div class="w3-display-container">
-                <img src="Images/Banners/Banner_Matheus_Massuda_1920x740.jpg" alt="Banner de Matheus Luiz Massuda" class="w3-image">
+                <img src="Images/Banners/Banner_Matheus_Massuda_1920x740.jpg" alt="Banner de Matheus Luiz Massuda" class="w3-image img-zoom-responsive">
                 <a href="#HISTÓRIA" class="w3-button w3-black w3-hover-blue-gray w3-display-bottomleft margin-banner-btn w3-padding-16 w3-small">MINHA HISTÓRIA</a>
             </div>
             
