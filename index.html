@@ -11,48 +11,63 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <title>Matheus Massuda</title>
   <style>
+        body  {
+        font-family: "Karla", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        }
+
         nav {
         font-family: "Kanit", sans-serif;
         font-weight: 300;
         font-style: normal;
         }
 
-        .margin-nav-bar {
-            max-width: 67%;
-            margin: 0 auto;
-            margin-top: 1.5%;
-            margin-bottom: 5%;
-        }
-
-        body  {
-        font-family: "Karla", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        }
-        
         .logo {
             max-height: 40px;
         }
 
-        /*
-        
-        .w3-container {
-            max-width:68%;
-             margin:0 auto;
-        }
-        .text-color {
-            color:rgb(29, 29, 29);
-        }
-
-        
-        */
-        
         .margin-banner-btn {
             margin: 6.2% 5.9%;
+        }
+
+        .padding-adjustment {
+            margin-top: 5%;
+        }
+
+        .titles-font-style {
+            font-family: "Karla", sans-serif;
+            font-size: 1.875em;
+            font-weight: 600;
+            letter-spacing: 0.48em;
+        }
+
+        .subtitles-font-style {
+            margin-top: 1.875em;
+            font-family: "Kanit", sans-serif;
+            font-size: 1.975em;
+            font-weight: 400;
         }
         
         .links {
             text-decoration: none;
+        }
+
+        .video-hover-container:hover .hover-image {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .video-hover-container:hover .preview-video {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .video-hover {
+        display: none;
+        }
+        .video-preview:hover .video-hover:hover {
+        display: block;
         }
 
         /*--------------------------------------------------------*/
@@ -65,7 +80,8 @@
             .w3-bar {
                 background-color: rgb(255, 255, 255);
             }
-
+            
+           
             .w3-display-container {
                 overflow: hidden;
                 display: flex;
@@ -73,10 +89,10 @@
             }
 
             .img-zoom-responsive {
-            transform: scale(1.8); /* Zoom (pode ajustar) */
-            transform-origin: right center; /* Mantém alinhado à direita */
-            transition: transform 0.3s ease-in-out;
-        }
+                transform: scale(1.8); /* Zoom (pode ajustar) */
+                transform-origin: right center; /* Mantém alinhado à direita */
+                transition: transform 0.3s ease-in-out;
+            }
 
         }
         
@@ -110,7 +126,7 @@
         
         @media only screen and (min-width: 769px) and (max-width: 1120px) {
             #main, .main {
-                margin: 1%;
+                margin: 0% 0% 1% 0%;
                 padding: 10px;
             }
                 
@@ -138,12 +154,13 @@
         
         @media only screen and (min-width: 1121px) {
             #main, .main {
-                margin: 0%;
-                padding: 10px;
+                margin: 2% 0% 8% 0%;
+                padding: 0px;
             }
                 
             .w3-bar {
                 background-color: rgb(255, 255, 255);
+                padding: 0;
             }
 
             
@@ -180,7 +197,7 @@
 </head>
 <body>
     <!--MENU DESKTOP-->
-    <div class="margin-nav-bar">
+    <div class="margin-nav-bar w3-container main">
         <nav class="w3-bar w3-text-balck w3-small w3-center w3-hide-small main" aria-label="Navegação Principal">
             <div class="w3-padding">
                 <a href="#topo" class="w3-bar-item">
@@ -208,7 +225,7 @@
 
     <!--MAIN -- PROJETOS-->
     <main>
-        <section class="w3-container main ">
+        <section class="w3-container main">
             
             <div class="w3-display-container">
                 <img src="Images/Banners/Banner_Matheus_Massuda_1920x740.jpg" alt="Banner de Matheus Luiz Massuda" class="w3-image img-zoom-responsive">
@@ -219,24 +236,49 @@
 
 
             
-            <h1 class="w3-center w3-padding-32">PROJETOS</h1>
+            <h1 class="w3-center w3-padding-64 padding-adjustment titles-font-style" >PROJETOS</h1>
 
-            <div>
-                <div>
-                    <div>
-                        <img class="" src="Images/Documentario_Tumb.jpg" alt="Capa do Documentário" style="width: 100%; max-height: 400px; object-fit: cover;">
+            <div class="w3-row w3-row-padding w3-margin-bottom">
+                <div class="w3-half">
+                    <div class="video-hover-container" style="position: relative; width: 100%; max-width: 550px; overflow: hidden;">
+                        <img class="hover-image" src="Images/Projetos/Documentario_Tumb.jpg" 
+                            alt="Capa do Documentário" 
+                            style="width: 100%; max-height: 400px; object-fit: cover; display: block;">
+
+                        <div class="video-hover">
+                            <iframe src="https://www.youtube.com/embed/NtKGOfoJdo8?autoplay=1&mute=1&playlist=NtKGOfoJdo8&loop=1" 
+                                    allow="autoplay; encrypted-media" 
+                                    allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <a href="https://www.youtube.com/watch?v=NtKGOfoJdo8&ab_channel=Skilu" 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;"></a>
                     </div>
 
                     <div>
-                        <h2 class="w3-medium">
+                        <h2 class="w3-medium w3-center subtitles-font-style">
                             <a href="https://www.youtube.com/watch?v=NtKGOfoJdo8&ab_channel=Skilu" target="_blank" class="links">World of Warcraft: o Fenômeno que Revolucionou uma Geração</a>
                         </h2>
                         <p>
                            Atuei como diretor, roteirista, ator e editor em meu documentário autoral <span>World of Warcraft: o Fenômeno que Revolucionou uma Geração</span>. Este projeto foi um experiência completa de produção e gestão audiovisual.  
                         </p>
+                        
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div>
+                        <img class="" src="Images/Projetos/Logomarca_Katana_Code_Apresentacao.jpg" alt="Capa do Documentário" style="width: 100%; max-height: 550px; object-fit: cover;">
+                    </div>
+
+                    <div>
+                        <h2 class="w3-medium w3-center subtitles-font-style">
+                            <a href="https://www.youtube.com/watch?v=NtKGOfoJdo8&ab_channel=Skilu" target="_blank" class="links">Design Gráfico: Logomarca - Katana Code</a>
+                        </h2>
                         <p>
-                            "Acreditar que somos capazes de realizar algo que "nem mesmo poderíamos imaginar que somos", foi o pensamento que mais me moveu ao longo de todo esse processo. Que essa crença permaneça acesa para sempre em minha mente e coração."
+                           Criei a identidade visual da minha marca pessoal, © Katana Code, unindo elementos orientais e tecnologia em um design moderno, marcante e minimalista</span>.  
                         </p>
+                       
                     </div>
                 </div>
             </div>
@@ -251,6 +293,9 @@
         </section>
         <!-- Seções adicionais como 'Projetos', 'Serviços' e 'Contato' podem ser adicionadas aqui -->
     </main>
+
+
+        
 
 
 </body>
