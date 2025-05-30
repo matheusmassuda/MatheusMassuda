@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&family=Karla:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Styles/style.css">
   <!--
   -------------Ver se ´pe necessário deixar ----------
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -22,31 +23,25 @@
 
 
 <body>
-    <!--MENU DESKTOP-->
-    <div class="margin-nav-bar w3-container main">
-        <nav class="w3-bar w3-text-balck w3-small w3-center w3-hide-small main" aria-label="Navegação Principal">
-            <div class="w3-padding">
-                <a href="#topo" class="w3-bar-item">
-                    <img src="Images/Logo/Logo_Katana_MatheusMassuda.png" alt="Logo de Katana por Matheus Massuda" class="logo"/>
-                </a>
-        
-                <a href="#PROJETOS" class="w3-bar-item w3-hover-text-light-grey">PROJETOS</a>
-                <a href="#HISTÓRIA" class="w3-bar-item w3-hover-text-light-grey">HISTÓRIA</a>
-                <a href="#TECNOLOGIAS" class="w3-bar-item w3-hover-text-light-grey">TECNOLOGIAS</a>
-                <a href="#contato" class="w3-bar-item w3-hover-text-light-grey">CONTATO</a>
-            </div>
+    <header>
+        <!-- Navigation Desktop -->
+        <nav class="w3-bar w3-hide-small" aria-label="Menu Principal">
+            <a href="#topo" class="w3-bar-item w3-button">
+                <img src="Images/Logo/Logo_Katana_MatheusMassuda.png" class="logo" alt="Logo Katana Code"/>
+            </a>
+            <a href="#projetos" class="w3-bar-item w3-button">PROJETOS</a>
+            <a href="#historia" class="w3-bar-item w3-button">HISTÓRIA</a>
+            <a href="#tecnologias" class="w3-bar-item w3-button">TECNOLOGIAS</a>
+            <a href="#contato" class="w3-bar-item w3-button">CONTATO</a>
         </nav>
-    </div>
-
-    <!--MENU MOBILE-->
-    <div class="w3-top w3-hide-large w3-hide-medium main">
-        <nav class="w3-bar s3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="#projetos" class="w3-bar-item w3-button" style="width: 24%;">PROJETOS</a>
-            <a href="#historia" class="w3-bar-item w3-button" style="width: 24%;">HISTÓRIAS</a>
-            <a href="#tecnologias" class="w3-bar-item w3-button" style="width: 30%;">TECNOLOGIAS</a>
-            <a href="#contato" class="w3-bar-item w3-button" style="width:22%;">CONTATO</a>
+        <!-- Navigation Mobile -->
+        <nav class="w3-bar w3-top w3-hide-medium w3-hide-large w3-small w3-opacity w3-hover-opacity-off" aria-label="Menu Mobile">
+            <a href="#projetos" class="w3-bar-item w3-button">PROJETOS</a>
+            <a href="#historia" class="w3-bar-item w3-button">HISTÓRIAS</a>
+            <a href="#tecnologias" class="w3-bar-item w3-button">TECNOLOGIAS</a>
+            <a href="#contato" class="w3-bar-item w3-button">CONTATO</a>
         </nav>
-    </div>
+    </header>
   
 
     <!--MAIN -- PROJETOS-->
