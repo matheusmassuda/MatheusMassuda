@@ -43,6 +43,16 @@ body  {
             transition: opacity 0.3s ease;
         }
 
+        .image-hover-container:hover .hover-image {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-hover-container:hover .preview-image {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
         .video-hover-container:hover .preview-video {
             opacity: 1;
             transition: opacity 0.3s ease;
@@ -164,6 +174,42 @@ body  {
 
 .margin-banner-btn {
     margin: clamp(18px, 2vw, 40px); /* 8px em telas pequenas, até 24px em grandes */
+}
+
+.image-hover-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-hover-container .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-hover-container .primary {
+    z-index: 1;
+    opacity: 1;
+}
+
+.image-hover-container .secondary {
+    z-index: 2;
+    opacity: 0;
+}
+
+/* Quando o mouse passa sobre o container, alterna as opacidades */
+.image-hover-container:hover .primary {
+    opacity: 0;
+}
+
+.image-hover-container:hover .secondary {
+    opacity: 1;
 }
 
         
