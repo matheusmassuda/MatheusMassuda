@@ -10,10 +10,13 @@ body  {
         font-style: normal;
         }
 
+        
+
         .logo {
             max-height: 40px;
         }
 
+        
         
 
         .padding-adjustment {
@@ -63,6 +66,14 @@ body  {
         }
         .video-preview:hover .video-hover:hover {
         display: block;
+        }
+
+
+
+        .banner-divider {
+            height: 1px;              
+            background-color: #ccc;   
+            margin: 12% auto 2% auto;   
         }
 
         /*--------------------------------------------------------*/
@@ -121,8 +132,13 @@ body  {
         
         @media only screen and (min-width: 769px) and (max-width: 1120px) {
             #main, .main {
-                margin: 0% 0% 1% 0%;
+                margin: 0% 1.5% 0% 1.5%;
                 padding: 10px;
+            }
+
+            .banner-divider {
+                width: 96%;
+                margin: 9% auto 2% auto;  
             }
                 
             .w3-bar {
@@ -151,6 +167,11 @@ body  {
             #main, .main {
                 margin: 2% 0% 8% 2%;
                 padding: 0px;
+            }
+
+            .banner-divider {
+                width: 62%;
+                margin: 6% auto 0% auto;  
             }
                 
             .w3-bar {
@@ -263,7 +284,9 @@ body  {
   opacity: 1;
 }
 
-        
+.margin-top-banner {
+    margin-top: 1%;
+}    
                             
                             
                       
