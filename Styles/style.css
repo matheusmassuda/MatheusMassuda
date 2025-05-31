@@ -172,6 +172,8 @@ body  {
                         
         }
 
+
+/*IMAGE (HOVER) - TRANSITION*/
 .margin-banner-btn {
     margin: clamp(18px, 2vw, 40px); /* 8px em telas pequenas, até 24px em grandes */
 }
@@ -179,14 +181,18 @@ body  {
 .image-hover-container {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 380px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    box-sizing: border-box;
 }
 
 .image-hover-container .hover-img {
     position: absolute;
-    top: 0;
-    left: 0;
+    
     width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -210,6 +216,51 @@ body  {
 
 .image-hover-container:hover .secondary {
     opacity: 1;
+}
+
+
+/*TEXT (SHOW PROJECT) - TRANSITION*/
+
+.project-button {
+  position: relative;
+  display: block;
+  height: 2.8em; /* aumentei para dar mais espaço vertical */
+  overflow: hidden;
+  padding: 0 16px;
+  font-size: 1rem;
+  line-height: 3em; /* igual à altura para alinhar verticalmente */
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+.project-button span {
+  display: block;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  transition: transform 0.8s ease, opacity 0.5s ease;
+}
+
+.project-button .text-default {
+  transform: translateY(0%);
+  opacity: 1;
+  z-index: 2;
+}
+
+.project-button .text-hover {
+  transform: translateY(100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.project-button:hover .text-default {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.project-button:hover .text-hover {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
         
