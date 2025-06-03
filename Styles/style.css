@@ -240,6 +240,8 @@ body  {
 }
 
 
+
+
 /*TEXT (SHOW PROJECT) - TRANSITION*/
 
 .project-button {
@@ -288,7 +290,9 @@ body  {
     margin-top: 1%;
 }    
                             
-                            
+.project-quote {
+    font-style: italic;
+}                            
                       
   
 
