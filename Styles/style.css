@@ -294,22 +294,70 @@ body  {
     font-style: italic;
 }             
 
-.social-icon {
-  color: #444;
-  padding: 0px;
-  margin: 0%;
-  display: inline-block;
-  transition: color 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
+.social-icons {
+ display: flex;
+ justify-content: flex-end;
+ gap: 10px;
 }
-.social-icon:hover {
-  color: transparent;
-  transform: scale(1.1);
+
+
+
+
+
+
+nav.social-icons {
+  display: flex;
+  gap: 1rem; /* Espaço entre ícones */
 }
+
 .social-icon svg {
   display: block;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.18s ease, color 0.18s ease;
+  color: #333;
 }
-                      
-  
 
-       
+.social-icon:hover svg,
+.social-icon:focus svg {
+    color: #a7a7a7; /* Ou cor da marca que quiser */
+    cursor: pointer;
+}
+
+/*-------------------------------------------------*/
+footer div .w3-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre newsletter e ícones */
+    flex-wrap: wrap; /* Quebra em telas menores */
+    gap: 1.5rem; /* Espaço entre colunas quando quebrar */
+    padding-left: 2rem 1rem;
+}
+
+
+#newsLetterForm {
+    display: inline-flex;
+    font-size: 0.85EM;
+    font-weight: 600;
+    gap: 2px;
+}
+
+footer.w3-container > div.w3-half {
+  flex: 1 1 300px; /* Deixa o form responsivo, mínimo 300px */
+  max-width: 100%;
+}
+
+#emailInput {
+    font-size: 0.95em;
+    width: 50%;
+}
+
+div.credits {
+    vertical-align: inherit;
+}
+
+
+
+
+
+
+
