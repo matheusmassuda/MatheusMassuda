@@ -292,7 +292,23 @@ body  {
                             
 .project-quote {
     font-style: italic;
-}                            
+}             
+
+.social-icon {
+  color: #444;
+  padding: 0px;
+  margin: 0%;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+.social-icon:hover {
+  color: transparent;
+  transform: scale(1.1);
+}
+.social-icon svg {
+  display: block;
+}
                       
   
 
