@@ -27,7 +27,7 @@
 
 <body>
     <!-- Navigation -- Desktop + Mobile-->
-    <header>
+    <header id="topo">
         <!-- Navigation Desktop -->
         <nav class="w3-container w3-bar w3-hide-small w3-padding-32" aria-label="Menu Principal">
             <a href="#topo" class="w3-bar-item">
@@ -103,7 +103,7 @@
                     </h2>
 
                     <p class="w3-justify">
-                        Dirigi, roteirisei, editei e participei do meu documentário — <span class="project-quote">World of Warcraft: o Fenômeno que Revolucionou uma Geração</span> — uma experiência completa de produção criativa e gestão audiovisual realizada em parceria com <span class="project-quote">Activision Blizzard</span> e <span class="project-quote">Theogames</span>.
+                        Dirigi, roteirisei, editei e participei do meu documentário — <span class="project-quote">World of Warcraft: o Fenômeno que Revolucionou uma Geração</span> — uma experiência completa de produção criativa e gestão audiovisual realizada em parceria com <span class="project-quote">Activision Blizzard</span>, <span class="project-quote">Theogames</span> e apoio de IA.
                     </p>
                 </div>
             </article>
@@ -205,100 +205,134 @@
 class input: w3-input w3-border w3-margin-bottom w3-margin-top  
 class button:   
 -->
-    <footer >
-        <!--
-            <div class="w3-half">
-        -->
-<div class="w3-container w3-padding">
-  <div class="newsletter-social-wrapper">
+    <footer>
+        
+    <div class="w3-container w3-padding">
+        <div class="newsletter-social-wrapper" id="contato">
 
-    <!-- FORMULÁRIO DE NEWSLETTER -->
-    <form id="newsLetterForm"
-          class="newsletter-form w3-padding"
-          role="form"
-          aria-label="Formulário de inscrição para newsletter">
-      <label for="emailInput" class="w3-hide">Endereço de e-mail</label>
+            <!-- FORMULÁRIO DE NEWSLETTER -->
+            <form id="newsLetterForm"
+                class="newsletter-form w3-padding"
+                role="form"
+                aria-label="Formulário de inscrição para newsletter">
+            <label for="emailInput" class="w3-hide">Endereço de e-mail</label>
 
-      <input id="emailInput"
-             type="email"
-             name="email"
-             placeholder="ENDEREÇO DE EMAIL"
-             required
-             class="w3-input w3-border w3-margin-top"
-             aria-label="Digite seu endereço de e-mail">
+            <input id="emailInput"
+                    type="email"
+                    name="email"
+                    placeholder="ENDEREÇO DE EMAIL"
+                    required
+                    class="w3-input w3-border w3-margin-top"
+                    aria-label="Digite seu endereço de e-mail">
 
-      <button type="submit"
-        class="w3-button w3-black w3-margin-top w3-hover-dark-grey w3-small"
-        style="width: fit-content; padding: 6px 18px;"
-        aria-label="Inscrever-se na newsletter">
-        INSCREVER-SE
-      </button>
-      
-    </form>
+            <button type="submit"
+                class="w3-button w3-black w3-margin-top w3-hover-dark-grey w3-small"
+                style="width: fit-content; padding: 6px 18px;"
+                aria-label="Inscrever-se na newsletter">
+                INSCREVER-SE
+            </button>
+            
+            </form>
 
-    <!-- ÍCONES DE REDES SOCIAIS -->
-    <div class="social-icons-wrapper w3-margin-top">
-      <nav aria-label="Redes Sociais"
-           class="social-icons w3-margin-top">
+            <!-- ÍCONES DE REDES SOCIAIS -->
+            <div class="social-icons-wrapper w3-margin-top">
+            <nav aria-label="Redes Sociais"
+                class="social-icons w3-margin-top">
 
-        <!-- GitHub -->
-        <a href="https://github.com/matheusmassuda"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="GitHub"
-           class="social-icon">
-          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.776 8.205 11.387.6.111.82-.261.82-.58v-2.044c-3.338.726-4.033-1.416-4.033-1.416-.546-1.386-1.333-1.754-1.333-1.754-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.238 1.84 1.238 1.07 1.834 2.809 1.304 3.495.997.107-.775.42-1.304.763-1.604-2.665-.303-5.466-1.332-5.466-5.933 0-1.31.469-2.381 1.237-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.51 11.51 0 0 1 3-.404c1.02.005 2.047.137 3 .404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.236 1.911 1.236 3.221 0 4.61-2.804 5.625-5.475 5.921.43.37.823 1.102.823 2.222v3.293c0 .321.218.694.825.576C20.565 22.272 24 17.79 24 12.5 24 5.87 18.63.5 12 .5z"/>
-          </svg>
-        </a>
+                <!-- GitHub -->
+                <a href="https://github.com/matheusmassuda"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                class="social-icon">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.776 8.205 11.387.6.111.82-.261.82-.58v-2.044c-3.338.726-4.033-1.416-4.033-1.416-.546-1.386-1.333-1.754-1.333-1.754-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.238 1.84 1.238 1.07 1.834 2.809 1.304 3.495.997.107-.775.42-1.304.763-1.604-2.665-.303-5.466-1.332-5.466-5.933 0-1.31.469-2.381 1.237-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.51 11.51 0 0 1 3-.404c1.02.005 2.047.137 3 .404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.236 1.911 1.236 3.221 0 4.61-2.804 5.625-5.475 5.921.43.37.823 1.102.823 2.222v3.293c0 .321.218.694.825.576C20.565 22.272 24 17.79 24 12.5 24 5.87 18.63.5 12 .5z"/>
+                </svg>
+                </a>
 
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/skilu_nozes/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Instagram"
-           class="social-icon">
-          <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a.88.88 0 1 1-1.75 0 .88.88 0 0 1 1.75 0z"/>
-          </svg>
-        </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/skilu_nozes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="social-icon">
+                <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a.88.88 0 1 1-1.75 0 .88.88 0 0 1 1.75 0z"/>
+                </svg>
+                </a>
 
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/matheus-luiz-massuda-14365134b/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="LinkedIn"
-           class="social-icon">
-          <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M20.45 20.45h-3.553v-5.569c0-1.328-.024-3.037-1.85-3.037-1.85 0-2.133 1.444-2.133 2.937v5.669H9.361V9h3.413v1.561h.049c.475-.898 1.635-1.85 3.367-1.85 3.6 0 4.267 2.368 4.267 5.448v6.291zM5.337 7.433a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM6.87 20.45H3.8V9h3.07v11.45zM22.225 0H1.771C.792 0 0 .774 0 1.728v20.543C0 23.225.792 24 1.771 24h20.451C23.2 24 24 23.225 24 22.271V1.728C24 .774 23.2 0 22.225 0z"/>
-          </svg>
-        </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/matheus-luiz-massuda-14365134b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="social-icon">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.45 20.45h-3.553v-5.569c0-1.328-.024-3.037-1.85-3.037-1.85 0-2.133 1.444-2.133 2.937v5.669H9.361V9h3.413v1.561h.049c.475-.898 1.635-1.85 3.367-1.85 3.6 0 4.267 2.368 4.267 5.448v6.291zM5.337 7.433a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM6.87 20.45H3.8V9h3.07v11.45zM22.225 0H1.771C.792 0 0 .774 0 1.728v20.543C0 23.225.792 24 1.771 24h20.451C23.2 24 24 23.225 24 22.271V1.728C24 .774 23.2 0 22.225 0z"/>
+                </svg>
+                </a>
 
-        <!-- YouTube -->
-        <a href="https://www.youtube.com/@SkiluNozes/videos"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="YouTube"
-           class="social-icon">
-          <svg width="28" height="26.93" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
-            <path fill="currentColor" fill-rule="evenodd" d="M19.616 10.955H4.384C1.963 10.955 0 12.88 0 15.252v3.452C0 21.076 1.963 23 4.384 23h15.232C22.036 23 24 21.076 24 18.704v-3.452c0-2.372-1.963-4.297-4.384-4.297zM7.584 13.643H6.168v6.894H4.8v-6.894H3.385V12.47h4.2v1.173zm4 6.894h-1.213v-.652a2.588 2.588 0 0 1-.7.55 1.497 1.497 0 0 1-.706.189c-.282 0-.491-.088-.635-.266-.14-.178-.213-.442-.213-.798v-4.975h1.214v4.566c0 .14.027.242.075.305.053.064.136.094.25.094.088 0 .201-.041.338-.125a1.63 1.63 0 0 0 .377-.32v-4.52h1.213v5.952zm4.406-1.23c0 .421-.095.745-.286.97-.189.225-.466.336-.825.336-.238 0-.45-.042-.635-.13a1.556 1.556 0 0 1-.52-.403v.456h-1.228V12.47h1.229v2.598c.164-.18.338-.32.52-.413a1.21 1.21 0 0 1 .56-.141c.384 0 .677.125.88.379.203.254.304.625.304 1.112v3.303h.001zm4.21-1.603h-2.322v1.122c0 .312.039.53.118.651.081.122.218.181.412.181.202 0 .341-.05.422-.153.079-.104.12-.33.12-.68v-.27h1.25v.305c0 .61-.151 1.07-.458 1.38-.302.307-.757.46-1.362.46-.545 0-.974-.163-1.285-.49-.311-.325-.47-.776-.47-1.35v-2.673c0-.514.174-.937.518-1.262.343-.325.784-.487 1.328-.487.556 0 .984.15 1.282.452.298.301.447.733.447 1.297v1.517zm-1.78-2.225c-.194 0-.332.053-.416.164-.086.105-.126.284-.126.533v.602h1.073v-.602c0-.25-.043-.429-.129-.533-.081-.11-.218-.164-.402-.164zm-4.187-.02a.608.608 0 0 0-.257.057.868.868 0 0 0-.25.182v3.708c.096.096.193.17.287.212.093.04.19.063.293.063.15 0 .258-.042.328-.127.07-.084.105-.22.105-.41v-3.073c0-.202-.042-.354-.128-.458a.475.475 0 0 0-.378-.154zM6.378 8.888h1.539V5.2L9.708 0H8.144l-.952 3.553h-.097L6.095 0h-1.55l1.833 5.367v3.52zm5.415.165c.621 0 1.109-.16 1.464-.479.353-.32.53-.758.53-1.32V3.869c0-.5-.181-.91-.54-1.227-.363-.316-.827-.475-1.393-.475-.621 0-1.116.15-1.484.451-.367.3-.551.704-.551 1.214V7.23c0 .557.18.998.538 1.33.359.329.838.494 1.436.494zm-.412-5.62a.614.614 0 0 1 .408-.13c.18 0 .327.042.438.13.111.09.167.205.167.348v3.572a.533.533 0 0 1-.165.414.626.626 0 0 1-.44.15c-.18 0-.32-.048-.418-.148-.096-.099-.145-.237-.145-.417V3.781a.44.44 0 0 1 .155-.348zm4.469 5.55c.257 0 .52-.071.792-.21a2.89 2.89 0 0 0 .787-.611v.726h1.367V2.332h-1.367v4.976c-.127.143-.268.26-.42.353-.155.092-.282.138-.382.138-.128 0-.223-.035-.278-.106-.056-.069-.088-.18-.088-.335V2.332h-1.365v5.48c0 .39.08.682.239.876.161.196.397.295.715.295z"></path>
-          </svg>
-        </a>
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@SkiluNozes/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                class="social-icon">
+                <svg width="28" height="26.93" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" fill-rule="evenodd" d="M19.616 10.955H4.384C1.963 10.955 0 12.88 0 15.252v3.452C0 21.076 1.963 23 4.384 23h15.232C22.036 23 24 21.076 24 18.704v-3.452c0-2.372-1.963-4.297-4.384-4.297zM7.584 13.643H6.168v6.894H4.8v-6.894H3.385V12.47h4.2v1.173zm4 6.894h-1.213v-.652a2.588 2.588 0 0 1-.7.55 1.497 1.497 0 0 1-.706.189c-.282 0-.491-.088-.635-.266-.14-.178-.213-.442-.213-.798v-4.975h1.214v4.566c0 .14.027.242.075.305.053.064.136.094.25.094.088 0 .201-.041.338-.125a1.63 1.63 0 0 0 .377-.32v-4.52h1.213v5.952zm4.406-1.23c0 .421-.095.745-.286.97-.189.225-.466.336-.825.336-.238 0-.45-.042-.635-.13a1.556 1.556 0 0 1-.52-.403v.456h-1.228V12.47h1.229v2.598c.164-.18.338-.32.52-.413a1.21 1.21 0 0 1 .56-.141c.384 0 .677.125.88.379.203.254.304.625.304 1.112v3.303h.001zm4.21-1.603h-2.322v1.122c0 .312.039.53.118.651.081.122.218.181.412.181.202 0 .341-.05.422-.153.079-.104.12-.33.12-.68v-.27h1.25v.305c0 .61-.151 1.07-.458 1.38-.302.307-.757.46-1.362.46-.545 0-.974-.163-1.285-.49-.311-.325-.47-.776-.47-1.35v-2.673c0-.514.174-.937.518-1.262.343-.325.784-.487 1.328-.487.556 0 .984.15 1.282.452.298.301.447.733.447 1.297v1.517zm-1.78-2.225c-.194 0-.332.053-.416.164-.086.105-.126.284-.126.533v.602h1.073v-.602c0-.25-.043-.429-.129-.533-.081-.11-.218-.164-.402-.164zm-4.187-.02a.608.608 0 0 0-.257.057.868.868 0 0 0-.25.182v3.708c.096.096.193.17.287.212.093.04.19.063.293.063.15 0 .258-.042.328-.127.07-.084.105-.22.105-.41v-3.073c0-.202-.042-.354-.128-.458a.475.475 0 0 0-.378-.154zM6.378 8.888h1.539V5.2L9.708 0H8.144l-.952 3.553h-.097L6.095 0h-1.55l1.833 5.367v3.52zm5.415.165c.621 0 1.109-.16 1.464-.479.353-.32.53-.758.53-1.32V3.869c0-.5-.181-.91-.54-1.227-.363-.316-.827-.475-1.393-.475-.621 0-1.116.15-1.484.451-.367.3-.551.704-.551 1.214V7.23c0 .557.18.998.538 1.33.359.329.838.494 1.436.494zm-.412-5.62a.614.614 0 0 1 .408-.13c.18 0 .327.042.438.13.111.09.167.205.167.348v3.572a.533.533 0 0 1-.165.414.626.626 0 0 1-.44.15c-.18 0-.32-.048-.418-.148-.096-.099-.145-.237-.145-.417V3.781a.44.44 0 0 1 .155-.348zm4.469 5.55c.257 0 .52-.071.792-.21a2.89 2.89 0 0 0 .787-.611v.726h1.367V2.332h-1.367v4.976c-.127.143-.268.26-.42.353-.155.092-.282.138-.382.138-.128 0-.223-.035-.278-.106-.056-.069-.088-.18-.088-.335V2.332h-1.365v5.48c0 .39.08.682.239.876.161.196.397.295.715.295z"></path>
+                </svg>
+                </a>
 
-        <!-- Twitter (X) -->
-        <a href="https://x.com/Skilu_Nozes"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Twitter"
-           class="social-icon">
-          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.949.564-2.005.974-3.127 1.195a4.533 4.533 0 0 0-7.72 4.132C7.691 7.838 4.066 5.882 1.64 2.905a4.518 4.518 0 0 0-.613 2.281c0 1.574.798 2.965 2.008 3.782a4.52 4.52 0 0 1-2.05-.566v.057c0 2.197 1.561 4.027 3.632 4.444a4.53 4.53 0 0 1-2.044.077 4.533 4.533 0 0 0 4.227 3.13 9.088 9.088 0 0 1-6.675 1.872 12.813 12.813 0 0 0 6.92 2.031c8.3 0 12.846-6.869 12.846-12.827 0-.195-.005-.39-.014-.583a9.148 9.148 0 0 0 2.248-2.334z"/>
-          </svg>
-        </a>
-      </nav>
-    </div>
-  </div>
-</div>            
+                <!-- Twitter (X) -->
+                <a href="https://x.com/Skilu_Nozes"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                class="social-icon">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.949.564-2.005.974-3.127 1.195a4.533 4.533 0 0 0-7.72 4.132C7.691 7.838 4.066 5.882 1.64 2.905a4.518 4.518 0 0 0-.613 2.281c0 1.574.798 2.965 2.008 3.782a4.52 4.52 0 0 1-2.05-.566v.057c0 2.197 1.561 4.027 3.632 4.444a4.53 4.53 0 0 1-2.044.077 4.533 4.533 0 0 0 4.227 3.13 9.088 9.088 0 0 1-6.675 1.872 12.813 12.813 0 0 0 6.92 2.031c8.3 0 12.846-6.869 12.846-12.827 0-.195-.005-.39-.014-.583a9.148 9.148 0 0 0 2.248-2.334z"/>
+                </svg>
+                </a>
+            </nav>
+            </div>
+        </div>
+    </div> 
+
+    <section class="w3-row-padding w3-padding-16 footer-limited" aria-label="Links institucionais">
+                <div class="w3-col s4">
+                    <h3 class="w3-large" style="font-weight: bold;">MENUS</h3>
+                    <nav role="navigation" aria-label="Navegação principal">
+                        <ul class="w3-ul">
+                            <li><a href="#projetos">PROJETOS</a></li>
+                            <li><a href="#historia">HISTÓRIA</a></li>
+                            <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+                            <li><a href="#contato">CONTATO</a></li>
+                            <li><a href="#topo">VOLTAR AO TOPO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="w3-col s4">
+                    <h3 class="w3-large" style="font-weight: bold;">EXTRAS</h3>
+                    <nav role="navigation" aria-label="Navegação principal">
+                        <ul class="w3-ul">
+                            <li><a href="#">ARTES</a></li>
+                            <li><a href="#">CONTATO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="w3-col s4">
+                    <h3 class="w3-large" style="font-weight: bold;">POLÍTICAS</h3>
+                    <nav role="navigation" aria-label="Navegação principal">
+                        <ul class="w3-ul">
+                            <li><a href="#contato">POLÍTICA DE PRIVACIDADE</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+        
+    </section>
+
+    </div>           
 
 <div style="height: 50px;"></div>
 <div class="banner-divider"></div>

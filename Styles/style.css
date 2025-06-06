@@ -114,11 +114,28 @@
                 transition: transform 0.3s ease-in-out;
             }
 
+            /*
+            
+            -----------------------------------------
+            -----------------------------------------
+            -----------------------------------------
+            -----------------------------------------  CORRIGIR RESPONSABILIDADE DOS MENUS (FOOTER) PARA MOBILE
+            -----------------------------------------
+            -----------------------------------------
+            -----------------------------------------
+            -----------------------------------------
+
+            
+            
+            
+            
+            */
+
         }
         
         /*--------------------------------------------------------*/
-        
-        @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+        @media only screen and (min-width: 0px) and (max-width: 379px) {
             #main, .main {
                 margin: 2% 1% 2% 2%;
                 padding: 3px;
@@ -139,6 +156,57 @@
                 transform-origin: right center;
                 transition: transform 0.3s ease-in-out;
             }
+
+            .footer-limited {
+                max-width: 62vw;
+                text-align: left;
+                margin-left: 3%;
+            }
+
+            .footer-limited h3, ul li, ul li a {
+                font-size: 11px !important;
+            }
+
+            .footer-limited .w3-col {
+                padding-left: 20px;
+            }
+        }
+        
+        @media only screen and (min-width: 380px) and (max-width: 768px) {
+            #main, .main {
+                margin: 2% 1% 2% 2%;
+                padding: 3px;
+            }
+                
+            .w3-bar {
+                background-color: rgb(255, 255, 255);
+            }
+                
+            .w3-display-container {
+                overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
+            }
+                    
+            .img-zoom-responsive {
+                transform: scale(1.38); 
+                transform-origin: right center;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .footer-limited {
+                max-width: 62vw;
+                text-align: left;
+                margin-left: 2.6%;
+            }
+
+            .footer-limited h3
+            .footer-limited ul li,
+            .footer-limited ul li a {
+                font-size: 13px;
+            }
+
+            
                         
         }
 
@@ -171,6 +239,12 @@
                 transform: scale(1.42); /* Zoom (pode ajustar) */
                 transform-origin: right center; /* Mantém alinhado à direita */
                 transition: transform 0.3s ease-in-out;
+            }
+
+            .footer-limited {
+                max-width: 62vw;
+                text-align: left;
+                margin-left: 1.5%;
             }
                         
         }
@@ -205,6 +279,10 @@
                 transition: transform 0.3s ease-in-out;
             }
 
+            
+            .footer-limited {
+                margin-left: 19.95%;
+            }
             
                         
         }
@@ -442,6 +520,17 @@ div.credits {
     padding: 16px;
 }
 
+footer a {
+    text-decoration: none;
+    color: #333;
+}
 
+.footer-limited {
+    max-width: 62vw;
+    text-align: left;
+}
 
+.footer-limited li {
+    border-bottom: none;
+}
 
