@@ -1,4 +1,8 @@
-body  {
+        html {
+        scroll-behavior: smooth;
+        }
+        
+        body  {
         font-family: "Karla", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
@@ -8,6 +12,16 @@ body  {
         font-family: "Kanit", sans-serif;
         font-weight: 300;
         font-style: normal;
+        }
+
+        .menu-desktop-bar {
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: #333
+        }
+
+        .menu-desktop-bar:hover {
+            color: #a0a0a0;
         }
 
         
@@ -190,6 +204,8 @@ body  {
                 transform-origin: right center;
                 transition: transform 0.3s ease-in-out;
             }
+
+            
                         
         }
 
@@ -305,24 +321,9 @@ body  {
 
 
 
-nav.social-icons {
-  display: flex;
-  gap: 1rem; /* Espaço entre ícones */
-}
 
-.social-icon svg {
-  display: block;
-  width: 28px;
-  height: 28px;
-  transition: transform 0.18s ease, color 0.18s ease;
-  color: #333;
-}
 
-.social-icon:hover svg,
-.social-icon:focus svg {
-    color: #a7a7a7; /* Ou cor da marca que quiser */
-    cursor: pointer;
-}
+
 
 /*-------------------------------------------------*/
 footer div .w3-container {
@@ -347,16 +348,99 @@ footer.w3-container > div.w3-half {
 }
 
 #emailInput {
+    display: inline-block;
     font-size: 0.95em;
-    width: 50%;
+    width: 60%;
 }
+
 
 div.credits {
     vertical-align: inherit;
 }
 
+    .newsletter-row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: nowrap;
+    }
+
+    .newsletter-row input {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .newsletter-row button {
+        white-space: nowrap;
+    }
 
 
+
+
+    
+/* ------------------------------------------------------- */
+/* Força o layout em linha horizontal para telas maiores */
+  @media (min-width: 601px) {
+    .newsletter-social-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+
+    .newsletter-form,
+    .social-icons-wrapper {
+      width: 48%;
+    }
+
+    .social-icons-wrapper {
+      text-align: right;
+    }
+  }
+
+  /* Estilo específico para dispositivos móveis */
+  @media (max-width: 600px) {
+    .newsletter-form,
+    .social-icons-wrapper {
+      width: 100%;
+    }
+
+    .social-icons-wrapper {
+      text-align: center;
+      margin-top: 16px;
+    }
+  }
+
+  /* Melhora espaçamento entre ícones */
+  .social-icons a {
+    margin: 0 8px;
+    display: inline-block;
+    color: inherit;
+  }
+
+
+.social-icon svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.18s ease, color 0.18s ease;
+  color: #333;
+}
+
+.social-icon:hover svg,
+.social-icon:focus svg {
+    color: #a7a7a7; /* Ou cor da marca que quiser */
+    cursor: pointer;
+}
+
+.text-style-credits a {
+    text-decoration: none;
+    display: block;
+    color: #a7a7a7;
+}
+
+.credits {
+    padding: 16px;
+}
 
 
 
