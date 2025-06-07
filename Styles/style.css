@@ -528,7 +528,7 @@ div.credits {
 
 footer a {
     text-decoration: none;
-    color: #333;
+    color: hsl(0, 0%, 20%);
 }
 
 .footer-limited {
@@ -540,3 +540,90 @@ footer a {
     border-bottom: none;
 }
 
+ /*-------------------- TECNOLOGIAS ------------------------------------*/
+
+.tech-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.icon-hover-container {
+    width: 130px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-hover-container svg {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+
+.tech-icon {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  filter: grayscale(0%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.tech-icon:hover {
+  filter: grayscale(100%);
+  transform: scale(1.03);
+}
+
+/*------------------------------------- icones */
+.project-button-icon {
+  position: relative;
+  display: block;
+  width: max-content;
+  height: 2.8em; /* aumentei para dar mais espaço vertical */
+  padding: 0 45px;
+  font-size: 1rem;
+  line-height: 2.8em; /* igual à altura para alinhar verticalmente */
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.project-button-icon span {
+  display: block;
+  width: 16px;
+  height: 100%;
+  position: absolute;
+  font-size: 14px;
+  top: 0;
+  left: 0;
+  text-align: left;
+}
+
+.project-button-icon .text-default {
+    transform: translateX(0%);
+    opacity: 1;
+    z-index: 2;
+    transition: transform 0.8s ease, opacity 0.5s ease;
+}
+
+.project-button-icon:hover .text-default {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.project-button-icon .text-hover {
+  transform: translateX(100%);
+  opacity: 0;
+  z-index: 1;
+  transition: transform 0.8s ease-out 0.3s, opacity 0.4s ease-out 0.2s;
+}
+
+
+.project-button-icon:hover .text-hover {
+  transform: translateX(0%);
+  opacity: 1;
+}
