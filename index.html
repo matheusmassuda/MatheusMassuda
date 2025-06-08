@@ -192,6 +192,54 @@
 
             </article>
 
+            <!-- LP Simples -->
+            <article class="w3-half" aria-labelledby="projeto-katana-code">
+
+                <div class="image-hover-container">
+                    <img src="Images/Projetos/Musica_IA_Logo.jpg"
+                        alt="Apresentação da identidade visual da marca Katana Code"
+                        class="hover-img primary"
+                        style="max-width: 80%;">
+
+                    <img src="Images/Projetos/Musica_IA_Bicadinha_do_Amor.jpg" 
+                    alt="Exemplo de aplicação da identidade visual da marca Katana Code"
+                    class="hover-img secondary"
+                    style="max-width: 80%;">
+                </div>
+
+                    <a href="https://sunoai.ai/pt/music/ae89119fbe4f483d973a77b1400ecc97"
+                       class="project-button"
+                       target="_blank"
+                       rel="noopener"
+                       aria-label="Trabalho completo da identidade visual">
+                       <span class="text-default">Inteligência Artificial</span>
+                       <span class="text-hover">Mostrar projeto —</span>
+                    </a>
+                <div class="w3-center">
+                    <h2 id="projeto-katana-code" 
+                        class="w3-medium subtitles-font-style w3-center">
+
+                        <a href="https://sunoai.ai/pt/music/ae89119fbe4f483d973a77b1400ecc97"  
+                        class="links"
+                        target="_blank"
+                        rel="noopener">Música gerada por (IA): Bicadinha do Amor</a>
+                    </h2>
+
+                    <audio controls>
+                        <source src="Assets/Audios/Audio_Bicadinha_do_Amor.mp3" 
+                        type="audio/mpeg"
+                        aria-label="Trecho da música gerada por ia: Bicadinha do Amor">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+
+                    <p class="w3-justify">
+                        Criei um prompt personalizado de geração musical usando inteligência artificial na plataforma Suno.ia — <span class="project-quote">Bicadinha do Amor (faixa #2)</span> — desenvolvendo uma canção exclusiva no estilo sertanejo dedicada à minha esposa.      
+                    </p>
+                    
+                </div>
+
+            </article>
+
         </section>
 
         <!-- TECNOLOGIAS -->
@@ -202,7 +250,7 @@
             <h2 id="tecnologias-heading" class="w3-center w3-padding-64 w3-margin-bottom padding-adjustment titles-font-style">TECNOLOGIAS</h2>
 
             <p class="w3-center " style="margin-top: -50px; margin-bottom: 60px;">
-                As ferramentas que transformam meus códigos em resultados reais.
+                As ferramentas que transformam meus códigos em<span style="display:block; font-weight: bold;">resultados reais.</span>
             </p>
 
             <div class="w3-container tech-carousel" id="techCarousel">
@@ -504,8 +552,8 @@ class button:
                         <ul class="w3-ul">
                             <li><a href="#projetos">PROJETOS</a></li>
                             <li><a href="#historia">HISTÓRIA</a></li>
-                            <li><a href="#tecnologias">TECNOLOGIAS</a></li>
-                            <li><a href="#contato">CONTATO</a></li>
+                            <li><a href="#tecnologias-heading">TECNOLOGIAS</a></li>
+                            <li><a href="#" id="link-whatsapp" target="_blank" rel="noopener" >CONTATO</a></li>
                             <li><a href="#topo">VOLTAR AO TOPO</a></li>
                         </ul>
                     </nav>
@@ -515,7 +563,9 @@ class button:
                     <nav role="navigation" aria-label="Navegação principal">
                         <ul class="w3-ul">
                             <li><a href="#">ARTES</a></li>
-                            <li><a href="#">CONTATO</a></li>
+                            <li><a href="Assets/Documents/Curriculo_Matheus_Massuda.pdf" 
+                                   download 
+                                   aria-label="Baixar currículo em PDF">CURRÍCULO</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -568,7 +618,13 @@ class button:
 
     </footer>
 
-
+    <!-- Script contato - abrir whatsapp -->
+    <script>
+        const numero = "5519999796441";
+        const mensagem = encodeURIComponent("Eai Matheus, vim pelo seu portfólio!");
+        const link = `https://wa.me/${numero}?text=${mensagem}`;
+        document.getElementById("link-whatsapp").href = link;
+    </script>
 
 
 

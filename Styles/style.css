@@ -575,7 +575,7 @@ footer a {
 }
 .tech-icon:hover {
   filter: grayscale(100%);
-  transform: scale(1.03);
+  transform: scale(1.12);
 }
 
 /*------------------------------------- icones */
