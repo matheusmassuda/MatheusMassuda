@@ -35,14 +35,14 @@
             </a>
             <a href="#projetos" class="w3-bar-item menu-desktop-bar">PROJETOS</a>
             <a href="#historia" class="w3-bar-item menu-desktop-bar">HISTÓRIA</a>
-            <a href="#tecnologias-heading" class="w3-bar-item menu-desktop-bar">TECNOLOGIAS</a>
+            <a href="#tecnologias-section" class="w3-bar-item menu-desktop-bar">TECNOLOGIAS</a>
             <a href="#contato" class="w3-bar-item menu-desktop-bar">CONTATO</a>
         </nav>
         <!-- Navigation Mobile -->
         <nav class="w3-bar w3-top w3-hide-medium w3-hide-large w3-small w3-opacity w3-hover-opacity-off" aria-label="Menu Mobile">
             <a href="#projetos" class="w3-bar-item w3-button">PROJETOS</a>
             <a href="#historia" class="w3-bar-item w3-button">HISTÓRIAS</a>
-            <a href="#tecnologias" class="w3-bar-item w3-button">TECNOLOGIAS</a>
+            <a href="#tecnologias-section" class="w3-bar-item w3-button">TECNOLOGIAS</a>
             <a href="#contato" class="w3-bar-item w3-button">CONTATO</a>
         </nav>
     </header>
@@ -72,9 +72,10 @@
 
                     <img src="Images/Projetos/Documentario_Tumb.jpg"
                         alt="Tumbnail do documentário sobre World of Warcraft"
-                        class="hover-image"
+                        class="hover-imag"
                         style="width: 100%; max-height: 400px; object-fit: cover;">
 
+                    <!-- 
                     <div class="video-hover" aria-hidden="true">
                         <iframe src="https://www.youtube.com/embed/NtKGOfoJdo8?autoplay=1&mute=1&playlist=NtKGOfoJdo8&loop=1"
                                 allow="autoplay; encrypted-media"
@@ -82,15 +83,60 @@
                                 allowfullscreen>
                         </iframe>
                     </div>
+                    -->
                 </div>
-                        <a href="https://www.youtube.com/watch?v=NtKGOfoJdo8"
-                        class="project-button"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Assista ao documentário completo no Youtube">
-                        <span class="text-default">Documentário autoral</span>
-                        <span class="text-hover">Mostrar projeto —</span>
-                        </a>
+                        
+
+                        <div class="project-header-row">
+                            <a href="https://www.youtube.com/watch?v=NtKGOfoJdo8"
+                            class="project-button"
+                            target="_blank"
+                            rel="noopener"
+                            aria-label="Assista ao documentário completo no Youtube">
+                            <span class="text-default">Documentário autoral</span>
+                            <span class="text-hover">Mostrar projeto —</span>
+                            </a>
+                            
+                            <button class="expand-toggle" aria-expanded="false" aria-controls="detalhes-wow" title="Ver mais detalhes">
+                                <!--
+                                    <svg viewBox="-7.2 -7.2 86.40 86.40" id="emoji" xmlns="http://www.w3.org/2000/svg" fill="#2b2b2b" stroke="#2b2b2b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.152"></g><g id="SVGRepo_iconCarrier"> <g id="color"> <polygon fill="#2b2b2bb2b2b" points="56,32.8 39.2,32.8 39.2,16 32.8,16 32.8,32.8 16,32.8 16,39.2 32.8,39.2 32.8,56 39.2,56 39.2,39.2 56,39.2"></polygon> </g> <g id="hair"></g> <g id="skin"></g> <g id="skin-shadow"></g> <g id="line"> <polygon fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="0.00072" points="56,32.8 39.2,32.8 39.2,16 32.8,16 32.8,32.8 16,32.8 16,39.2 32.8,39.2 32.8,56 39.2,56 39.2,39.2 56,39.2"></polygon> </g> </g></svg>
+                                    -->
+
+                                    <span class="icon-plus" aria-hidden="true">
+                                        <svg viewBox="-7.2 -7.2 86.40 86.40" xmlns="http://www.w3.org/2000/svg" fill="#2b2b2b">
+                                        <polygon points="56,32.8 39.2,32.8 39.2,16 32.8,16 32.8,32.8 16,32.8 16,39.2 32.8,39.2 32.8,56 39.2,56 39.2,39.2 56,39.2"/>
+                                        </svg>
+                                    </span>
+
+                                    <!-- Ícone "-" -->
+                                    <span class="icon-minus" aria-hidden="true">
+                                        <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill="#2b2b2b">
+                                        <rect x="16" y="32" width="40" height="8" />
+                                        </svg>
+                                    </span>
+                                    
+                                </button>
+                            </div>
+                            
+                        <!-- Conteúdo extra -->
+                        <div id="detalhes-wow" class="project-details">
+                            <div class="project-details-container w3-justify">
+                                <h3 class="w3-medium w3-center">Detalhes do Projeto</h3>
+                                <p>Histórias épicas e emocionantes revelam a paixão que moldou a comunidade de World of Warcraft, o maior MMORPG de todos os tempos.</p>
+
+                                <video id="video-wow" class="project-video" controls preload="metadata" autoplay muted loop playsinline>
+                                    <source src="videos/World-Of-Warcraft-Doc-Portifolio-web.mp4" type="video/mp4">
+                                    Seu navegador não suporta o elemento <code>video</code>.
+                                </video>
+
+                                Dirigido e escrito por <span class="project-quote" style="font-weight: 600;">Matheus Luiz "Skilu" Massuda</span> o curta-metragem captura/revela momentos icônicos e inesquecíveis do fenômeno que marcou uma geração.
+                                <!--
+                                    <img src="Images/Projetos/Documentario_Extra_Imagem1.jpg" alt="Cena extra do documentário" style="width:100%; max-height:300px; object-fit:cover; margin-bottom: 1rem;">
+                                -->
+                                <p><span class="project-quote" style="font-weight: 600;">"Acreditar que somos capazes de realizar algo que "nem mesmo poderíamos imaginar que somos", foi o pensamento que mais me moveu ao longo de todo esse processo. Que essa crença permaneça acesa para sempre em minha mente e coração."</span></p>
+                                <p>Inclui edição colaborativa com ferramentas de IA (planejamento, descrições e tradução, mixagem de áudio) para refinamento da produção e trilha sonora com licença</p>
+                            </div>
+                        </div>
                 <div>
 
                     
@@ -243,7 +289,7 @@
         </section>
 
         <!-- TECNOLOGIAS -->
-        <section class="tech-section"
+        <section id="tecnologias-section" class="tech-section"
                  aria-labelledby="tecnologias-heading"
                  aria-label="Tecnologias e respectivos graus de conhecimento">
 
@@ -624,6 +670,41 @@ class button:
         const mensagem = encodeURIComponent("Eai Matheus, vim pelo seu portfólio!");
         const link = `https://wa.me/${numero}?text=${mensagem}`;
         document.getElementById("link-whatsapp").href = link;
+    </script>
+
+    <!-- Script abrir toggle projetos -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.querySelector(".expand-toggle");
+  const details = document.getElementById("detalhes-wow");
+
+  toggleBtn.addEventListener("click", function () {
+    const isExpanded = toggleBtn.getAttribute("aria-expanded") === "true";
+
+    if (isExpanded) {
+      toggleBtn.setAttribute("aria-expanded", "false");
+
+      // Fecha suavemente
+      details.style.maxHeight = details.scrollHeight + "px"; // necessário para ativar transição
+      requestAnimationFrame(() => {
+        details.style.maxHeight = "0";
+        details.classList.remove("open");
+      });
+    } else {
+      toggleBtn.setAttribute("aria-expanded", "true");
+
+      // Abre suavemente
+      details.classList.add("open");
+      const scrollHeight = details.scrollHeight;
+      details.style.maxHeight = scrollHeight + "px";
+
+      // Resetar max-height para auto após a animação (evita corte)
+      setTimeout(() => {
+        details.style.maxHeight = "none";
+      }, 600); // igual ao tempo da transição
+    }
+  });
+});
     </script>
 
 
