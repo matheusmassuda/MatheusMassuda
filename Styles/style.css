@@ -6,6 +6,7 @@
         font-family: "Karla", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
+        padding-top: 75px;
         }
 
         nav {
@@ -13,6 +14,21 @@
         font-weight: 300;
         font-style: normal;
         }
+
+        
+        .menu-fixo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            transition: padding 0.4s ease, gap 0.4s ease;
+        }
+        
 
         .menu-desktop-bar {
             text-decoration: none;
