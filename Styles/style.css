@@ -526,11 +526,11 @@
   transform-box: fill-box;
   transform-origin: center;
   transition: transform 0.9s ease;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .expand-toggle[aria-expanded="true"] {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 .expand-toggle .icon-plus,
