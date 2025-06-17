@@ -121,49 +121,6 @@
             background-color: #ccc;   
             margin: 12% auto 2% auto;   
         }
-
-        /*--------------------------------------------------------*/
-        @media (max-width: 480px) {
-            #main, .main {
-                margin: 0%;
-                padding: 10px;
-            }
-
-            .w3-bar {
-                background-color: rgb(255, 255, 255);
-            }
-            
-           
-            .w3-display-container {
-                overflow: hidden;
-                display: flex;
-                justify-content: flex-end;
-            }
-
-            .img-zoom-responsive {
-                transform: scale(1.8); /* Zoom (pode ajustar) */
-                transform-origin: right center; /* Mantém alinhado à direita */
-                transition: transform 0.3s ease-in-out;
-            }
-
-            /*
-            
-            -----------------------------------------
-            -----------------------------------------
-            -----------------------------------------
-            -----------------------------------------  CORRIGIR RESPONSABILIDADE DOS MENUS (FOOTER) PARA MOBILE
-            -----------------------------------------
-            -----------------------------------------
-            -----------------------------------------
-            -----------------------------------------
-
-            
-            
-            
-            
-            */
-
-        }
         
         /*--------------------------------------------------------*/
 
@@ -245,6 +202,10 @@
             .footer-limited ul li a {
                 font-size: 13px;
             }
+
+            .projects-grid {
+              grid-template-columns: 1fr; /* Só 1 coluna em telas pequenas */
+            }
                         
         }
 
@@ -321,10 +282,41 @@
             .footer-limited {
                 margin-left: 19.95%;
             }
+
+            .projects-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 1rem;
+            }
             
                         
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+ 
 
 /*IMAGE (HOVER) - TRANSITION*/
 .margin-banner-btn {
@@ -424,6 +416,10 @@
 
 /*------------ projetos toggle*/
 
+.project-container {
+
+}
+
 .expand-toggle {
   background: none;
   border: none;
@@ -444,7 +440,8 @@
   transform: rotate(180deg);
 }
 
-.project-details {
+
+article .project-details {
   max-height: 0;
   overflow: hidden;
   margin: 1rem 1rem;
@@ -453,12 +450,13 @@
 }
 
 .project-details-container {
-    margin-left: 6%;
-    width: 86%;
-    margin-bottom: 60px;
-    padding: 2rem;
-    border: 1px solid #e6e6e6;
+  margin-left: 6%;
+  width: 86%;
+  margin-bottom: 60px;
+  padding: 2rem;
+  border: 1px solid #e6e6e6;
 }
+
 
 .project-details.open {
   opacity: 1;
@@ -474,7 +472,7 @@
 }
 
 .project-details.open {
-  max-height: 1500px; /* ajuste conforme o conteúdo */
+  max-height: 7000px; /* ajuste conforme o conteúdo */
   opacity: 1;
 }
 
@@ -561,6 +559,21 @@
 .expand-toggle[aria-expanded="true"] .icon-plus {
   display: none;
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* DUAS colunas no desktop */
+  gap: 1.5rem; /* Espaçamento entre os artigos */
+}
+
+.projects-grid article {
+  max-width: 600px;
+  width: 100%;
+}
+
+
+
+/*----------- TENTARIVA CORREÇÃO ----------------*/
 
 
 /*----------- SLIDER PROJECT-WOW ----------------*/
