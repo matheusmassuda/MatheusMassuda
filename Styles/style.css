@@ -7,6 +7,7 @@
         font-optical-sizing: auto;
         font-style: normal;
         padding-top: 75px;
+        color: #292929;
         }
 
         .w3-leftbar {
@@ -166,6 +167,10 @@
             .footer-limited .w3-col {
                 padding-left: 20px;
             }
+
+            
+
+            
 
         }
         
