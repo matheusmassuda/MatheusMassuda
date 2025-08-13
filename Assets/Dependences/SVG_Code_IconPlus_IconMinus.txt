@@ -1,0 +1,31 @@
+To do this btn: (+), 
+write this:
+
+
+<svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill="#2b2b2b">
+                        <polygon points="56,32.8 39.2,32.8 39.2,16 32.8,16 32.8,32.8 16,32.8 16,39.2 32.8,39.2 32.8,56 39.2,56 39.2,39.2 56,39.2"/>
+                        </svg>
+
+
+----------------------------------------------
+
+To do this btn: (—), 
+write this:
+
+<svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" fill="#2b2b2b">
+                            <rect x="16" y="32" width="40" height="8" />
+                            </svg>
+
+
+
+----------------------------------------------
+
+To do this btn: (▲), 
+write this:
+
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#2b2b2b">
+                                    
+                                            <path d="M7 14l5-5 5 5z" transform="rotate(-90 12 12)" />
+                                    </svg>
+
+
